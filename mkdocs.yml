@@ -1,7 +1,8 @@
-site_name: Python Template
-site_url: https://leynier.github.io/python-template
-repo_url: https://github.com/leynier/python-template
-edit_uri: https://github.com/leynier/python-template/edit/main/docs
+site_name: Unity Version Manager
+site_url: https://educup.github.io/uvm
+repo_url: https://github.com/educup/uvm
+edit_uri: https://github.com/educup/uvm/edit/main/docs
+copyright: Developer with ❤️ for EducUp
 
 theme:
   name: material
@@ -25,45 +26,15 @@ markdown_extensions:
 
 extra:
   social:
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/leynier
-      name: LinkedIn
+    - icon: fontawesome/solid/globe
+      link: https://educup.io
+      name: Web
     - icon: fontawesome/brands/github
-      link: https://github.com/leynier
+      link: https://github.com/educup
       name: GitHub
-    - icon: fontawesome/brands/gitlab
-      link: https://gitlab.com/leynier
-      name: GitLab
-    - icon: fontawesome/solid/code
-      link: https://profile.codersrank.io/user/leynier
-      name: Codersrank
-    - icon: fontawesome/brands/dev
-      link: https://dev.to/leynier
-      name: Dev.to
-    - icon: fontawesome/brands/stack-overflow
-      link: https://stackoverflow.com/users/8921443/leynier-guti%C3%A9rrez-gonz%C3%A1lez
-      name: Stack Overflow
-    - icon: fontawesome/brands/researchgate
-      link: https://www.researchgate.net/profile/Leynier_Gutierrez_Gonzalez
-      name: Research Gate
-    - icon: fontawesome/brands/medium
-      link: https://medium.com/@leynier41
-      name: Medium
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/leynier41
-      name: Twitter
-    - icon: fontawesome/brands/telegram
-      link: https://t.me/leynier
-      name: Telegram
     - icon: fontawesome/brands/facebook
-      link: https://www.facebook.com/leynier41
+      link: https://www.facebook.com/educup.io
       name: Facebook
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/leynier41
-      name: Instagram
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/channel/UCT1z3Pckv-U31HhL31e--rw
-      name: Youtube
     - icon: fontawesome/solid/paper-plane
-      link: mailto:leynier41@gmail.com
+      link: mailto:hello@educup.io
       name: Gmail

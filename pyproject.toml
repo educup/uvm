@@ -1,16 +1,16 @@
 [tool.poetry]
-name = "template"
+name = "uvm"
 version = "0.3.1"
-description = "Python template with CI/CD ready for production"
-authors = ["leynier <leynier41@gmail.com>"]
-homepage = "https://github.com/leynier/python-template"
-repository = "https://github.com/leynier/python-template"
-documentation = "https://github.com/leynier/python-template"
+description = "Unity Version Manager CLI implemented with Python and Typer"
+authors = ["educup <hello@educup.io>"]
+homepage = "https://github.com/educup/uvm"
+repository = "https://github.com/educup/uvm"
+documentation = "https://github.com/educup/uvm"
 readme = "README.md"
 license = "MIT"
 
 [tool.poetry.scripts]
-template = "template.main:app"
+uvm = "uvm.main:app"
 
 [tool.poetry.dependencies]
 python = "^3.8"
