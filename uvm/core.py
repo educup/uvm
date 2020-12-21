@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import List, Optional
 
 
 class Version:
@@ -63,7 +63,7 @@ class Version:
             mark = False
             for line in file.readlines():
                 if "bundleVersion: " in line:
-                    content = line.split(": ")[1].strip()
+                    content = line.split(": ")[1]
                     content_splited = content.split(".")
                     if len(content_splited) != 3:
                         raise Exception(
@@ -81,13 +81,13 @@ class Version:
                             + "x, y and z should be an integers"
                         )
                 elif "iPhone: " in line and mark:
-                    content = line.split(": ")[1].strip()
+                    content = line.split(": ")[1]
                     try:
                         build = int(content)
                     except ValueError:
                         raise Exception("Build should be an integer")
                 elif "AndroidBundleVersionCode: " in line:
-                    content = line.split(": ")[1].strip()
+                    content = line.split(": ")[1]
                     try:
                         code = int(content)
                     except ValueError:
@@ -106,9 +106,25 @@ class Version:
             raise Exception(f"Error parsing file: {version}")
         return version
 
-    @staticmethod
-    def set(filename: str):
-        pass
+    def set(self, filename: str):
+        lines: List[str] = []
+        with open(filename, mode="r") as file:
+            mark = False
+            for line in file.readlines():
+                if "bundleVersion: " in line:
+                    content = line.split(":")[0]
+                    lines.append(f"{content}: {self.major}.{self.minor}.{self.patch}\n")
+                elif "iPhone: " in line and mark:
+                    content = line.split(":")[0]
+                    lines.append(f"{content}: {self.build}\n")
+                elif "AndroidBundleVersionCode: " in line:
+                    content = line.split(":")[0]
+                    lines.append(f"{content}: {self.code}\n")
+                else:
+                    lines.append(line)
+                mark = "buildNumber:" in line
+        with open(filename, mode="w") as file:
+            file.writelines(lines)
 
     @staticmethod
     def parse(version: str) -> Optional["Version"]:
