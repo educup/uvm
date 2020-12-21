@@ -1,0 +1,1044 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://educup.github.io/uvm/">
+      
+      
+      <link rel="shortcut icon" href="logo.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>Unity Version Manager</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.196e0c26.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="light-blue">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unity-version-manager" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://educup.github.io/uvm" title="Unity Version Manager" class="md-header-nav__button md-logo" aria-label="Unity Version Manager">
+      
+  <img src="logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis md-ellipsis">
+          Unity Version Manager
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/educup/uvm/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://educup.github.io/uvm" title="Unity Version Manager" class="md-nav__button md-logo" aria-label="Unity Version Manager">
+      
+  <img src="logo.png" alt="logo">
+
+    </a>
+    Unity Version Manager
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/educup/uvm/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Unity Version Manager
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="." class="md-nav__link md-nav__link--active">
+      Unity Version Manager
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#uvm-build" class="md-nav__link">
+    uvm build
+  </a>
+  
+    <nav class="md-nav" aria-label="uvm build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uvm-build-get" class="md-nav__link">
+    uvm build get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-build-set" class="md-nav__link">
+    uvm build set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-build-setup" class="md-nav__link">
+    uvm build setup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uvm-code" class="md-nav__link">
+    uvm code
+  </a>
+  
+    <nav class="md-nav" aria-label="uvm code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uvm-code-get" class="md-nav__link">
+    uvm code get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-code-set" class="md-nav__link">
+    uvm code set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-code-setup" class="md-nav__link">
+    uvm code setup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uvm-get" class="md-nav__link">
+    uvm get
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uvm-major" class="md-nav__link">
+    uvm major
+  </a>
+  
+    <nav class="md-nav" aria-label="uvm major">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uvm-major-get" class="md-nav__link">
+    uvm major get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-major-set" class="md-nav__link">
+    uvm major set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-major-setup" class="md-nav__link">
+    uvm major setup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uvm-minor" class="md-nav__link">
+    uvm minor
+  </a>
+  
+    <nav class="md-nav" aria-label="uvm minor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uvm-minor-get" class="md-nav__link">
+    uvm minor get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-minor-set" class="md-nav__link">
+    uvm minor set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-minor-setup" class="md-nav__link">
+    uvm minor setup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uvm-patch" class="md-nav__link">
+    uvm patch
+  </a>
+  
+    <nav class="md-nav" aria-label="uvm patch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uvm-patch-get" class="md-nav__link">
+    uvm patch get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-patch-set" class="md-nav__link">
+    uvm patch set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-patch-setup" class="md-nav__link">
+    uvm patch setup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uvm-set" class="md-nav__link">
+    uvm set
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#uvm-build" class="md-nav__link">
+    uvm build
+  </a>
+  
+    <nav class="md-nav" aria-label="uvm build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uvm-build-get" class="md-nav__link">
+    uvm build get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-build-set" class="md-nav__link">
+    uvm build set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-build-setup" class="md-nav__link">
+    uvm build setup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uvm-code" class="md-nav__link">
+    uvm code
+  </a>
+  
+    <nav class="md-nav" aria-label="uvm code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uvm-code-get" class="md-nav__link">
+    uvm code get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-code-set" class="md-nav__link">
+    uvm code set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-code-setup" class="md-nav__link">
+    uvm code setup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uvm-get" class="md-nav__link">
+    uvm get
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uvm-major" class="md-nav__link">
+    uvm major
+  </a>
+  
+    <nav class="md-nav" aria-label="uvm major">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uvm-major-get" class="md-nav__link">
+    uvm major get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-major-set" class="md-nav__link">
+    uvm major set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-major-setup" class="md-nav__link">
+    uvm major setup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uvm-minor" class="md-nav__link">
+    uvm minor
+  </a>
+  
+    <nav class="md-nav" aria-label="uvm minor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uvm-minor-get" class="md-nav__link">
+    uvm minor get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-minor-set" class="md-nav__link">
+    uvm minor set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-minor-setup" class="md-nav__link">
+    uvm minor setup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uvm-patch" class="md-nav__link">
+    uvm patch
+  </a>
+  
+    <nav class="md-nav" aria-label="uvm patch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uvm-patch-get" class="md-nav__link">
+    uvm patch get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-patch-set" class="md-nav__link">
+    uvm patch set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uvm-patch-setup" class="md-nav__link">
+    uvm patch setup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uvm-set" class="md-nav__link">
+    uvm set
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/educup/uvm/edit/main/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="unity-version-manager">Unity Version Manager<a class="headerlink" href="#unity-version-manager" title="Permanent link">🔗</a></h1>
+<p><a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green.svg" /></a>
+<a href="https://github.com/educup/uvm/actions?query=workflow%3ACI"><img alt="Test" src="https://github.com/educup/uvm/workflows/CI/badge.svg" /></a>
+<a href="https://codecov.io/gh/educup/uvm"><img alt="codecov" src="https://codecov.io/gh/educup/uvm/branch/main/graph/badge.svg?token=Z1MEEL3EAB" /></a>
+<a href="https://pypi.org/project/uvm"><img alt="Version" src="https://img.shields.io/pypi/v/uvm?color=%2334D058&amp;label=Version" /></a>
+<a href="https://github.com/educup/uvm/commits"><img alt="Last commit" src="https://img.shields.io/github/last-commit/educup/uvm.svg?style=flat" /></a>
+<a href="https://github.com/educup/uvm/commits"><img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/educup/uvm" /></a>
+<a href="https://github.com/educup/uvm/stargazers"><img alt="Github Stars" src="https://img.shields.io/github/stars/educup/uvm?style=flat&amp;logo=github" /></a>
+<a href="https://github.com/educup/uvm/network/members"><img alt="Github Forks" src="https://img.shields.io/github/forks/educup/uvm?style=flat&amp;logo=github" /></a>
+<a href="https://github.com/educup/uvm"><img alt="Github Watchers" src="https://img.shields.io/github/watchers/educup/uvm?style=flat&amp;logo=github" /></a>
+<a href="https://educup.github.io/uvm"><img alt="Website" src="https://img.shields.io/website?up_message=online&amp;url=https%3A%2F%2Feducup.github.io/uvm" /></a>
+<a href="https://github.com/educup/uvm/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/educup/uvm" /></a></p>
+<p><a href="https://unity.com">Unity</a> Version Manager CLI implemented with <a href="https://www.python.org">Python</a> and <a href="https://typer.tiangolo.com">Typer</a>.</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</code></pre></div>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--install-completion</code>: Install completion for the current shell.</li>
+<li><code>--show-completion</code>: Show completion for the current shell, to copy it or customize the installation.</li>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<p><strong>Commands</strong>:</p>
+<ul>
+<li><code>build</code>: Command to manage the version build</li>
+<li><code>code</code>: Command to manage the version code</li>
+<li><code>get</code>: Get the version</li>
+<li><code>major</code>: Command to manage the version major</li>
+<li><code>minor</code>: Command to manage the version minor</li>
+<li><code>patch</code>: Command to manage the version patch</li>
+<li><code>set</code>: Set the version</li>
+</ul>
+<h2 id="uvm-build"><code>uvm build</code><a class="headerlink" href="#uvm-build" title="Permanent link">🔗</a></h2>
+<p>Command to manage the version build</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm build <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</code></pre></div>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<p><strong>Commands</strong>:</p>
+<ul>
+<li><code>get</code>: Get the version build</li>
+<li><code>set</code>: Set the version build</li>
+<li><code>setup</code>: Increase the version build to the next</li>
+</ul>
+<h3 id="uvm-build-get"><code>uvm build get</code><a class="headerlink" href="#uvm-build-get" title="Permanent link">🔗</a></h3>
+<p>Get the version build</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm build get <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h3 id="uvm-build-set"><code>uvm build set</code><a class="headerlink" href="#uvm-build-set" title="Permanent link">🔗</a></h3>
+<p>Set the version build</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm build <span class="nb">set</span> <span class="o">[</span>OPTIONS<span class="o">]</span> NUMBER <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>NUMBER</code>: Version build  [required]</li>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h3 id="uvm-build-setup"><code>uvm build setup</code><a class="headerlink" href="#uvm-build-setup" title="Permanent link">🔗</a></h3>
+<p>Increase the version build to the next</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm build setup <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h2 id="uvm-code"><code>uvm code</code><a class="headerlink" href="#uvm-code" title="Permanent link">🔗</a></h2>
+<p>Command to manage the version code</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm code <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</code></pre></div>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<p><strong>Commands</strong>:</p>
+<ul>
+<li><code>get</code>: Get the version code</li>
+<li><code>set</code>: Set the version code</li>
+<li><code>setup</code>: Increase the version code to the next</li>
+</ul>
+<h3 id="uvm-code-get"><code>uvm code get</code><a class="headerlink" href="#uvm-code-get" title="Permanent link">🔗</a></h3>
+<p>Get the version code</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm code get <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h3 id="uvm-code-set"><code>uvm code set</code><a class="headerlink" href="#uvm-code-set" title="Permanent link">🔗</a></h3>
+<p>Set the version code</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm code <span class="nb">set</span> <span class="o">[</span>OPTIONS<span class="o">]</span> NUMBER <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>NUMBER</code>: Version code  [required]</li>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h3 id="uvm-code-setup"><code>uvm code setup</code><a class="headerlink" href="#uvm-code-setup" title="Permanent link">🔗</a></h3>
+<p>Increase the version code to the next</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm code setup <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h2 id="uvm-get"><code>uvm get</code><a class="headerlink" href="#uvm-get" title="Permanent link">🔗</a></h2>
+<p>Get the version</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm get <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h2 id="uvm-major"><code>uvm major</code><a class="headerlink" href="#uvm-major" title="Permanent link">🔗</a></h2>
+<p>Command to manage the version major</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm major <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</code></pre></div>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<p><strong>Commands</strong>:</p>
+<ul>
+<li><code>get</code>: Get the version major</li>
+<li><code>set</code>: Set the version major</li>
+<li><code>setup</code>: Increase the version major to the next</li>
+</ul>
+<h3 id="uvm-major-get"><code>uvm major get</code><a class="headerlink" href="#uvm-major-get" title="Permanent link">🔗</a></h3>
+<p>Get the version major</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm major get <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h3 id="uvm-major-set"><code>uvm major set</code><a class="headerlink" href="#uvm-major-set" title="Permanent link">🔗</a></h3>
+<p>Set the version major</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm major <span class="nb">set</span> <span class="o">[</span>OPTIONS<span class="o">]</span> NUMBER <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>NUMBER</code>: Version major  [required]</li>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h3 id="uvm-major-setup"><code>uvm major setup</code><a class="headerlink" href="#uvm-major-setup" title="Permanent link">🔗</a></h3>
+<p>Increase the version major to the next</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm major setup <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h2 id="uvm-minor"><code>uvm minor</code><a class="headerlink" href="#uvm-minor" title="Permanent link">🔗</a></h2>
+<p>Command to manage the version minor</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm minor <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</code></pre></div>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<p><strong>Commands</strong>:</p>
+<ul>
+<li><code>get</code>: Get the version minor</li>
+<li><code>set</code>: Set the version minor</li>
+<li><code>setup</code>: Increase the version minor to the next</li>
+</ul>
+<h3 id="uvm-minor-get"><code>uvm minor get</code><a class="headerlink" href="#uvm-minor-get" title="Permanent link">🔗</a></h3>
+<p>Get the version minor</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm minor get <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h3 id="uvm-minor-set"><code>uvm minor set</code><a class="headerlink" href="#uvm-minor-set" title="Permanent link">🔗</a></h3>
+<p>Set the version minor</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm minor <span class="nb">set</span> <span class="o">[</span>OPTIONS<span class="o">]</span> NUMBER <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>NUMBER</code>: Version minor  [required]</li>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h3 id="uvm-minor-setup"><code>uvm minor setup</code><a class="headerlink" href="#uvm-minor-setup" title="Permanent link">🔗</a></h3>
+<p>Increase the version minor to the next</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm minor setup <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h2 id="uvm-patch"><code>uvm patch</code><a class="headerlink" href="#uvm-patch" title="Permanent link">🔗</a></h2>
+<p>Command to manage the version patch</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm patch <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+</code></pre></div>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<p><strong>Commands</strong>:</p>
+<ul>
+<li><code>get</code>: Get the version patch</li>
+<li><code>set</code>: Set the version patch</li>
+<li><code>setup</code>: Increase the version patch to the next</li>
+</ul>
+<h3 id="uvm-patch-get"><code>uvm patch get</code><a class="headerlink" href="#uvm-patch-get" title="Permanent link">🔗</a></h3>
+<p>Get the version patch</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm patch get <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h3 id="uvm-patch-set"><code>uvm patch set</code><a class="headerlink" href="#uvm-patch-set" title="Permanent link">🔗</a></h3>
+<p>Set the version patch</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm patch <span class="nb">set</span> <span class="o">[</span>OPTIONS<span class="o">]</span> NUMBER <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>NUMBER</code>: Version patch  [required]</li>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h3 id="uvm-patch-setup"><code>uvm patch setup</code><a class="headerlink" href="#uvm-patch-setup" title="Permanent link">🔗</a></h3>
+<p>Increase the version patch to the next</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm patch setup <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+<h2 id="uvm-set"><code>uvm set</code><a class="headerlink" href="#uvm-set" title="Permanent link">🔗</a></h2>
+<p>Set the version</p>
+<p><strong>Usage</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> uvm <span class="nb">set</span> <span class="o">[</span>OPTIONS<span class="o">]</span> ARG <span class="o">[</span>FILENAME<span class="o">]</span>
+</code></pre></div>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>ARG</code>: The format must be <code>"*.*.*b*(*)"</code> where * is the major, minor, patch, build and code respectively and all integers.  [required]</li>
+<li><code>[FILENAME]</code>: Path of ProjectSettings.asset file of the Unity project  [envvar: UVM_FILENAME;default: ./ProjectSettings/ProjectSettings.asset]</li>
+</ul>
+<p><strong>Options</strong>:</p>
+<ul>
+<li><code>--help</code>: Show this message and exit.</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Developer with ❤️ for EducUp
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://educup.io" target="_blank" rel="noopener" title="Web" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://github.com/educup" target="_blank" rel="noopener" title="GitHub" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+      
+      
+      <a href="https://www.facebook.com/educup.io" target="_blank" rel="noopener" title="Facebook" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+      </a>
+    
+      
+      
+      <a href="mailto:hello@educup.io" target="_blank" rel="noopener" title="Gmail" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: ['navigation.instant'],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
