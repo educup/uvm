@@ -6,6 +6,8 @@ copyright: Developer with ❤️ for EducUp
 
 theme:
   name: material
+  logo: logo.png
+  favicon: logo.png
   language: en
   features:
     - navigation.instant
@@ -14,7 +16,7 @@ theme:
     accent: light blue
 
 nav:
-  - Home: index.md
+  - Unity Version Manager: index.md
 
 markdown_extensions:
   - pymdownx.highlight
