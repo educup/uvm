@@ -86,13 +86,14 @@ class Version:
                         build = int(content)
                     except ValueError:
                         raise Exception("Build should be an integer")
+                    mark = False
                 elif "AndroidBundleVersionCode: " in line:
                     content = line.split(": ")[1]
                     try:
                         code = int(content)
                     except ValueError:
                         raise Exception("Code should be an integer")
-                mark = "buildNumber:" in line
+                mark = mark or "buildNumber:" in line
                 if (
                     major != -1
                     and minor != -1
@@ -117,12 +118,13 @@ class Version:
                 elif "iPhone: " in line and mark:
                     content = line.split(":")[0]
                     lines.append(f"{content}: {self.build}\n")
+                    mark = False
                 elif "AndroidBundleVersionCode: " in line:
                     content = line.split(":")[0]
                     lines.append(f"{content}: {self.code}\n")
                 else:
                     lines.append(line)
-                mark = "buildNumber:" in line
+                mark = mark or "buildNumber:" in line
         with open(filename, mode="w") as file:
             file.writelines(lines)
 
