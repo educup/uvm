@@ -18,8 +18,8 @@ typer = "^0.3.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.1"
-flake8 = "^3.8.4"
 black = "^21.4b0"
+flake8 = "^3.9.1"
 isort = "^5.7.0"
 pytest-cov = "^2.10.1"
 typer-cli = "^0.0.11"
