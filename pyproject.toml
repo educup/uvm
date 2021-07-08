@@ -22,7 +22,7 @@ black = "^21.6b0"
 flake8 = "^3.9.2"
 isort = "^5.9.2"
 pytest-cov = "^2.12.1"
-typer-cli = "^0.0.11"
+typer-cli = "^0.0.12"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
