@@ -20,7 +20,7 @@ typer = "^0.3.2"
 pytest = "^6.2.5"
 black = "^21.10b0"
 flake8 = "^4.0.1"
-isort = "^5.10.0"
+isort = "^5.10.1"
 pytest-cov = "^3.0.0"
 typer-cli = "^0.0.12"
 
